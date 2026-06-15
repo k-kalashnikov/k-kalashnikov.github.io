@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantine Kalashnikov - Lead .NET Developer & Team Lead</title>
+    
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:title" content="Constantine Kalashnikov - Lead .NET Developer & Team Lead">
+    <meta property="og:description" content="Resume of Constantine Kalashnikov, Lead .NET Developer & Engineering Team Lead with 17 years of experience in AgriTech, FinTech, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://k-kalashnikov.github.io/">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --text-color: #334155;
+            --heading-color: #0f172a;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --tag-bg: #e0e7ff;
+            --tag-text: #3730a3;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            font-size: 0.95rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-item:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 i {
+            color: var(--primary-color);
+        }
+
+        /* Experience */
+        .job {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .job:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+
+        .job-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--heading-color);
+            margin: 0 0 5px 0;
+        }
+
+        .company {
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .company a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .company a:hover {
+            text-decoration: underline;
+        }
+
+        .date {
+            color: #64748b;
+            font-size: 0.9rem;
+            font-weight: 500;
+            background: #f1f5f9;
+            padding: 4px 10px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .job p {
+            margin-bottom: 10px;
+        }
+
+        .job ul {
+            margin: 10px 0 15px 20px;
+        }
+
+        .job li {
+            margin-bottom: 6px;
+        }
+
+        .tech-stack {
+            font-size: 0.9rem;
+            color: #475569;
+            background: #f8fafc;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px dashed var(--border-color);
+            margin-top: 10px;
+        }
+
+        .tech-stack strong {
+            color: var(--heading-color);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #64748b;
+            border-left: 3px solid var(--border-color);
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-category h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--heading-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .skill-category h3 i {
+            color: var(--primary-color);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .tag:hover {
+            background: #c7d2fe;
+        }
+
+        /* Education & About */
+        .content-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+            .date {
+                align-self: flex-start;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Constantine Kalashnikov</h1>
+        <div class="subtitle">Lead .NET Developer & Engineering Team Lead</div>
+        <div class="contact-info">
+            <span class="contact-item"><i class="fa-solid fa-clock"></i>UTC +04:00</span>
+            <a href="tel:+79041841635" class="contact-item"><i class="fa-solid fa-phone"></i> +7 904 184-16-35</a>
+            <a href="mailto:k-kalashnikov73@yandex.ru" class="contact-item"><i class="fa-solid fa-envelope"></i> k-kalashnikov73@yandex.ru</a>
+            <a href="https://www.linkedin.com/in/constantine-kalashnikov-629b4794" target="_blank" class="contact-item"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://t.me/k_kalashnikov" target="_blank" class="contact-item"><i class="fa-brands fa-telegram"></i> Telegram</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="experience">
+            <h2><i class="fa-solid fa-briefcase"></i> Professional Experience <span style="font-size: 1rem; color: #64748b; font-weight: 400; margin-left: 10px;">Total 17 y.</span></h2>
+            
+            <!-- 6Grain -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Team Lead / Lead .NET Developer</h3>
+                        <p class="company"><a href="https://www.6grain.com/" target="_blank">6Grain</a></p>
+                    </div>
+                    <span class="date">May 2025 – Jan 2026</span>
+                </div>
+                <p>Led an international cross-functional team (Backend, Frontend, Mobile) on a <strong>satellite- and drone-based agricultural monitoring platform</strong> for the Ministry of Agriculture of Uzbekistan and major agroholdings.</p>
+                <ul>
+                    <li>Took over a failing project abandoned by two prior teams; rebuilt architecture, tooling, and delivery pipeline from scratch.</li>
+                    <li>Integrated heterogeneous data sources (satellites, drones, IoT sensors, field reports) into a unified real-time decision platform.</li>
+                    <li>Managed full SDLC: requirements → architecture → development → CI/CD → deployment → support.</li>
+                    <li>Handled <strong>multi-terabyte datasets</strong> (weather, satellite imagery) — true Big Data in production.</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Tech stack:</strong> .NET 6→9 (ASP.NET Core, WinUI 3, Blazor), PostgreSQL + PostGIS, MinIO, GeoServer, Angular 20, Flutter, MAUI, Qwen LLM (for code/doc generation & translation).
+                </div>
+            </div>
+
+            <!-- Uber -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Team Lead</h3>
+                        <p class="company"><a href="https://uber.com" target="_blank">Uber Technologies Inc.</a></p>
+                    </div>
+                    <span class="date">Nov 2024 – May 2025</span>
+                </div>
+                <p>Led an international cross-functional team (Backend, Frontend, Mobile) on an <strong>internal monitoring system platform</strong> for the taxi.</p>
+                <ul>
+                    <li>Took over a project abandoned by prior team; rebuilt architecture, tooling, and delivery pipeline from scratch.</li>
+                    <li>Managed full SDLC: requirements → architecture → development → CI/CD → deployment → support.</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Tech stack:</strong> .NET 8 (ASP.NET Core, Blazor, MAUI), PostgreSQL + PostGIS, MinIO, Angular.
+                </div>
+            </div>
+
+            <!-- Yandex -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Lead Developer</h3>
+                        <p class="company"><a href="https://yandex.ru/jobs/atmosphere/yteam" target="_blank">Yandex</a></p>
+                    </div>
+                    <span class="date">Jan 2022 – Nov 2024</span>
+                </div>
+                <p>Served as an external expert and crisis team lead for internal products and external clients.</p>
+                <ul>
+                    <li>Acted as <strong>technical architect</strong> and <strong>interim engineering lead</strong> on high-stakes, "production hell" projects.</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Tech stack:</strong> C#, Java (Spring), Python, React, Angular, Blazor, PostgreSQL, MS SQL, Docker, Azure, RabbitMQ, Kafka.
+                </div>
+            </div>
+
+            <!-- A&D Mortgage -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Lead Software Engineer</h3>
+                        <p class="company"><a href="https://admortgage.com/" target="_blank">A&D Mortgage LLC</a></p>
+                    </div>
+                    <span class="date">Nov 2020 – Dec 2021</span>
+                </div>
+                <p>Built a U.S.-focused mortgage platform connecting banks, brokers, and end-users.</p>
+                <div class="tech-stack">
+                    <strong>Tech stack:</strong> .NET Core 3.1, ReactJS, RabbitMQ, Docker, MS SQL.
+                </div>
+            </div>
+
+            <!-- Stekpoint -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Lead Software Engineer</h3>
+                        <p class="company"><a href="https://stecpoint.ru/" target="_blank">Stekpoint LLC</a></p>
+                    </div>
+                    <span class="date">Feb 2020 – Nov 2020</span>
+                </div>
+                <p>Developed an internal tender platform for a large corporate group.</p>
+                <ul>
+                    <li>Full lifecycle: supplier selection → logistics → warehouse accounting → payment.</li>
+                    <li>Responsibilities: analysis, task decomposition, development, code review, product vision.</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Tech stack:</strong> .NET Core 3.1, gRPC, RabbitMQ, PostgreSQL, MS SQL.
+                </div>
+            </div>
+
+            <!-- Telecom RU -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Lead Developer</h3>
+                        <p class="company">Telecom RU</p>
+                    </div>
+                    <span class="date">Mar 2018 – Dec 2019</span>
+                </div>
+                <p>Sole backend developer for multiple internal products (no team lead or analyst available).</p>
+                <ul>
+                    <li>Built: video surveillance system, internal CRM, company website.</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Tech stack:</strong> .NET Core 2, ASP.NET Core, Razor, Laravel (PHP), Python, ReactJS.
+                </div>
+                <div class="quote">🧠 Wore every hat: analyst, architect, developer, and QA.</div>
+            </div>
+
+            <!-- Dao Tech -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Team Lead</h3>
+                        <p class="company">Dao Tech</p>
+                    </div>
+                    <span class="date">Oct 2018 – Jul 2019</span>
+                </div>
+                <p>Led development for a local tech venture (Ulyanovsk).</p>
+            </div>
+
+            <!-- Yabloko -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Head of Development</h3>
+                        <p class="company">"Yabloko" Discount Club LLC</p>
+                    </div>
+                    <span class="date">Aug 2017 – Feb 2018</span>
+                </div>
+                <p>Built and managed the development department from the ground up.</p>
+            </div>
+
+            <!-- MST -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">.NET Developer</h3>
+                        <p class="company">MST Digital Agency</p>
+                    </div>
+                    <span class="date">Mar 2016 – Jul 2017</span>
+                </div>
+                <p>Full-stack web development for agency clients.</p>
+            </div>
+
+            <!-- Freelance -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Freelance Web Developer</h3>
+                        <p class="company">Self-employed</p>
+                    </div>
+                    <span class="date">Jan 2014 – Mar 2016</span>
+                </div>
+                <p>Built and maintained websites for small businesses.</p>
+            </div>
+
+            <!-- My Media -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Programmer</h3>
+                        <p class="company">My Media Company</p>
+                    </div>
+                    <span class="date">Jul 2014 – Dec 2014</span>
+                </div>
+                <p>Website development and support.</p>
+            </div>
+
+            <!-- ITECH -->
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">Programmer</h3>
+                        <p class="company">ITECH.group</p>
+                    </div>
+                    <span class="date">Mar 2014 – Jul 2014</span>
+                </div>
+                <p>Website maintenance and minor feature development.</p>
+            </div>
+
+        </section>
+
+        <section id="skills">
+            <h2><i class="fa-solid fa-screwdriver-wrench"></i> Key Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">ASP.NET Core</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">gRPC</span>
+                        <span class="tag">REST</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">RabbitMQ</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-desktop"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Angular</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Blazor</span>
+                        <span class="tag">Razor Pages</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Desktop & Mobile</h3>
+                    <div class="skill-tags">
+                        <span class="tag">WinUI 3</span>
+                        <span class="tag">MAUI</span>
+                        <span class="tag">Flutter</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">PostGIS</span>
+                        <span class="tag">MS SQL</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-cloud"></i> Infra / DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">MinIO</span>
+                        <span class="tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-robot"></i> AI / LLM</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Qwen 2.5–3</span>
+                        <span class="tag">Code Gen</span>
+                        <span class="tag">Translation</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-industry"></i> Domains</h3>
+                    <div class="skill-tags">
+                        <span class="tag">AgriTech</span>
+                        <span class="tag">SCADA</span>
+                        <span class="tag">Banking</span>
+                        <span class="tag">Mining</span>
+                        <span class="tag">Government</span>
+                        <span class="tag">Telecom</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+            <div class="content-card">
+                <h3 class="job-title">Ulyanovsk State Technical University</h3>
+                <p>Specialist Degree in Information Technologies <span class="date" style="margin-left: 10px;">2010–2015</span></p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2><i class="fa-solid fa-user"></i> About Me</h2>
+            <div class="content-card about-text">
+                <p>I’m a pragmatic and hands-on <strong>Lead .NET Developer & Engineering Team Lead</strong> with <strong>10+ years of experience</strong> building mission-critical systems across agriculture, finance, mining, SCADA, government, and telecom sectors.</p>
+                <p>I believe great software solves real problems — whether it’s unifying satellite and drone data for crop monitoring or stabilizing legacy platforms under tight deadlines. I lead by doing: writing code, designing architecture, mentoring engineers, and bridging the gap between business needs and technical execution.</p>
+                <p>Outside of work, I’m a passionate <strong>home cook</strong> 🍳 (always hunting for bold new recipes!), an amateur <strong>guitarist</strong> 🎸, and a devoted <strong>outdoor camper</strong> 🏕️ who finds clarity in forest trails and starlit nights.</p>
+                <p>My career choices are guided by one core value: <strong>responsibility for my family’s well-being</strong> ❤️. This means I seek stable, meaningful opportunities where I can grow, contribute long-term, and build something that truly matters.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Constantine Kalashnikov</p>
+    </footer>
+</div>
+
+</body>
+</html>
